@@ -61,8 +61,7 @@ main {
     width: 135px;
 }
 
-.face::after {
-    font-size: 8rem;
-    content: '😃';
-    position: absolute;
+.check::after {
+    font-size: 6rem;
+    content: '✅';
 }

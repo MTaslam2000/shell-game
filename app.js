@@ -46,9 +46,19 @@ function getRandomShell() {
 
 function guessOutcome(userGuess, correctSpot) {
     const correctContainer = document.getElementById(`${correctSpot}-container`);
-    correctContainer.classList.add('face');
+    
+    brownContainer.classList.remove('check');
+    whiteContainer.classList.remove('check');
+    snailContainer.classList.remove('check');
+    correctContainer.classList.add('check');
+
+    totalGuesses++;
     if (userGuess === correctSpot) {
         winGuesses++;
     }
+
+
+    winsEl.textContent = winGuesses;
+    totalEl.textContent = totalGuesses;
 }
 // (don't forget to call any display functions you want to run on page load!)

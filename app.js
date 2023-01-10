@@ -30,5 +30,20 @@ snailBtn.addEventListener ('click', () => {
 });
 
 /* Display Functions */
+function getRandomShell() {
+    const randomShells = [
+        'brown',
+        'white',
+        'snail'
+    ];
 
+    const index = Math.floor(Math.random() * randomShells.length);
+    const correctSpot = randomShells[index];
+
+    return correctSpot;
+}
+
+function guessOutcome(userGuess, correctSpot) {
+    
+}
 // (don't forget to call any display functions you want to run on page load!)

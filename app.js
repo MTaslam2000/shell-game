@@ -18,7 +18,8 @@ let totalGuesses = 0;
 
 /* Events */
 brownBtn.addEventListener ('click', () => {
-
+    const correctSpot = getRandomShell();
+    guessOutcome('brown', correctSpot);
 });
 
 whiteBtn.addEventListener ('click', () => {
@@ -44,6 +45,10 @@ function getRandomShell() {
 }
 
 function guessOutcome(userGuess, correctSpot) {
-    
+    const correctContainer = document.getElementById(`${correctSpot}-container`);
+    correctContainer.classList.add('face');
+    if (userGuess === correctSpot) {
+        winGuesses++;
+    }
 }
 // (don't forget to call any display functions you want to run on page load!)

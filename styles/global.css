@@ -60,3 +60,9 @@ main {
 .snail img {
     width: 135px;
 }
+
+.face::after {
+    font-size: 8rem;
+    content: '😃';
+    position: absolute;
+}

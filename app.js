@@ -23,11 +23,13 @@ brownBtn.addEventListener ('click', () => {
 });
 
 whiteBtn.addEventListener ('click', () => {
-    
+    const correctSpot = getRandomShell();
+    guessOutcome('white', correctSpot);
 });
 
 snailBtn.addEventListener ('click', () => {
-    
+    const correctSpot = getRandomShell();
+    guessOutcome('snail', correctSpot);
 });
 
 /* Display Functions */

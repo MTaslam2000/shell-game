@@ -33,9 +33,9 @@
     <main>
 
         <div class="shells">
-            <section class="brown"><img src="./assets/Brown_shell.webp"></section>
-            <section class="white"><img src="./assets/White_shell.jpg"></section>
-            <section class="snail"><img src="./assets/Snail_shell.jpg"></section>
+            <section class="brown" id="brown-container"><img src="./assets/Brown_shell.webp"></section>
+            <section class="white" id="white-container"><img src="./assets/White_shell.jpg"></section>
+            <section class="snail" id="snail-container"><img src="./assets/Snail_shell.jpg"></section>
         </div>
         
         <div class="buttons">
@@ -44,8 +44,8 @@
         <button id="snail-button">snail</button>
         </div>
 
-        <h2>Correct Guesses: </h2>
-        <h2>Total Guesses: </h2>
+        <h2>Correct Guesses: <span id="wins">0</span></h2>
+        <h2>Total Guesses: <span id="total">0</span></h2>
     </main>
 
 </body>

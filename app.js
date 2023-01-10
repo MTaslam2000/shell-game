@@ -9,12 +9,25 @@ const brownContainer = document.getElementById('brown-container');
 const whiteContainer = document.getElementById('white-container');
 const snailContainer = document.getElementById('snail-container');
 
-const winsEL = document.getElementById('wins');
+const winsEl = document.getElementById('wins');
 const totalEl = document.getElementById('total');
 
 /* State */
+let winGuesses = 0;
+let totalGuesses = 0;
 
 /* Events */
+brownBtn.addEventListener ('click', () => {
+
+});
+
+whiteBtn.addEventListener ('click', () => {
+    
+});
+
+snailBtn.addEventListener ('click', () => {
+    
+});
 
 /* Display Functions */
 

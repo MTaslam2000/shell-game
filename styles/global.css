@@ -33,3 +33,35 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.shells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    justify-content: space-evenly;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.brown img {
+    width: 200px;
+    
+}
+
+.white img {
+    width: 135px;
+}
+.snail img {
+    width: 135px;
+}
+
+.check::after {
+    font-size: 6rem;
+    content: '✅';
+}

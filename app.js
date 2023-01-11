@@ -11,6 +11,7 @@ const snailContainer = document.getElementById('snail-container');
 
 const winsEl = document.getElementById('wins');
 const totalEl = document.getElementById('total');
+const incorrectEl = document.getElementById('wrong');
 
 /* State */
 let winGuesses = 0;
@@ -62,5 +63,6 @@ function guessOutcome(userGuess, correctSpot) {
 
     winsEl.textContent = winGuesses;
     totalEl.textContent = totalGuesses;
+    incorrectEl.textContent = totalGuesses - winGuesses;
 }
 // (don't forget to call any display functions you want to run on page load!)
